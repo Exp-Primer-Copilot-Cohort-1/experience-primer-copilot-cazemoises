@@ -65,4 +65,4 @@ router.route('/:dishId')
         res.statusCode = 403;
         res.end(`POST operation not supported on /dishes/${req.params.dishId}`);
     })
-    .put(authenticate.verifyUser, authenticate.verifyAdmin
+    .put(authenticate.verifyUser, authenticate.verifyAdmin)
